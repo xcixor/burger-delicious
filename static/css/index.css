@@ -1,0 +1,75 @@
+.container{
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". header ."
+    ". products ."
+    ". impactmsg ."
+    ". promotion ."
+    ". comment ."
+    ". footer ."
+    ;
+    color: white;
+}
+.container div:nth-child(n){
+    background-color: blueviolet;
+}
+.header{
+    grid-area: header;
+}
+.products{
+    grid-area: products;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "services ordering";
+}
+.products div:nth-child(even){
+    background-color: blue;
+}
+.impactmsg{
+    grid-area: impactmsg;
+}
+.promotion{
+    grid-area: promotion;
+}
+.comment{
+    grid-area: comment;
+}
+.footer{
+    grid-area: footer;
+}
+.services{
+    grid-area: services;
+}
+.ordering{
+    grid-area: ordering;
+}
+@media (max-width: 767px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "products"
+        "impactmsg"
+        "promotion"
+        "comment"
+        "footer"
+        ;
+        color: white;
+    }
+    .products{
+        grid-area: products;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "services"
+        "ordering"
+        ;
+    }
+}
