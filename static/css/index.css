@@ -1,14 +1,14 @@
 .container{
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    ". header ."
-    ". products ."
-    ". impactmsg ."
-    ". promotion ."
-    ". comment ."
-    ". footer ."
+    "header"
+    "products"
+    "impactmsg"
+    "promotion"
+    "comment"
+    "footer"
     ;
     color: white;
 }
@@ -21,11 +21,14 @@
 .products{
     grid-area: products;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "services ordering";
+    "services"
+    "ordering"
+    ;
 }
+
 .products div:nth-child(even){
     background-color: blue;
 }
@@ -47,29 +50,27 @@
 .ordering{
     grid-area: ordering;
 }
-@media (max-width: 767px) {
+@media screen and (min-width: 736px){
     .container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 15% 1fr 15%;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "header"
-        "products"
-        "impactmsg"
-        "promotion"
-        "comment"
-        "footer"
+        ". header ."
+        ". products ."
+        ". impactmsg ."
+        ". promotion ."
+        ". comment ."
+        ". footer ."
         ;
         color: white;
     }
     .products{
         grid-area: products;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 80% 20%;
         grid-template-rows: 1fr;
         grid-template-areas: 
-        "services"
-        "ordering"
-        ;
+        "services ordering";
     }
 }
