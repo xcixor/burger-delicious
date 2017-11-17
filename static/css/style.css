@@ -6,3 +6,12 @@ body{
     /* background-color: #3f1f09; */
     background-color: black;
 }
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+@font-face {
+    font-family: Vollkorn SC;
+    src: url(/static/fonts/volkron-regular.ttf);
+}
