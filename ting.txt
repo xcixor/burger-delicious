@@ -5,3 +5,5 @@ container
 row
 col-third - takes a third of the row
 col-half - takes a half of the row
+
+actuall, css3 is also capable
