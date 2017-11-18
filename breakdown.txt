@@ -1,0 +1,64 @@
+Objective
+The purpose of the site is 
+1) to allow our customers to see the restaurant history 
+2) to know the locations that are near to them. 
+3) the customers can see the picture for the product through the website. 
+4) The customers can put their feedback about the restaurant such as problems or suggestions.   
+
+Preliquistes
+- Delicious burger is a fast food restaurant that provides all kinds of product such as beef and chicken burgers, fries, 
+    drinks and desserts. 
+- It has a several branches around UAE. It has 24 hours for delivery to any places inside UAE. 
+- We accept only paying on cash, also the order will not deliver if it less than 25 Dhs. 
+- We have only one language in the site.
+
+Audience
+The site will be designed for all ages that can see the menu and know the nearest location of the restaurant 
+and they can order by using our contact number. 
+The site will be designed in English. 
+
+bare minimum
+index page 
+    -Impact statement
+    -Three main points of emphasis
+        -comment
+        -Our services or Products
+        -Featured product 
+        -Promotion
+
+about - History
+product - Check out hardees Products
+promotion - Maybe include delivery
+contact us - ?
+locations - All places in the UAE
+header - Contains the main menu
+footer - Contains the menu + copyright and such stuff
+Requirements
+a. Layout: The website layout must be created using HTML5 structure tags and CSS rules as per your plan 
+b. Navigation: Create all the required pages as per your plan with and a fully working navigation system.  
+c. Images: A minimum of 6 images must be used in the website for the content (this does not include banner and navigation images). 
+    Images should be clear and not distorted. 
+    All images must have alt property set.
+d. Content: your website should have sufficient text content formatted as headings, paragraphs, lists etc. 
+    You must also use external links, email links and internal links.
+e. Form: You form should be user friendly with appropriate fields.
+g. Design: Apply CARP principles and use best practices to design your website with all the required elements 
+    (refer to marking scheme to see what is required). 
+
+
+
+
+Documentation
+Will include
+Demonstration of website functionality 
+– Navigation, 
+Links, 
+Form, 
+validation, 
+navigation, 
+browser compatibility test
+-microsoft edge does not support css grids
+-internet explorer will never
+
+test - made mobile first and then then desktop
+@font face support 92% of browsers
