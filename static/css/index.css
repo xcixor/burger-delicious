@@ -17,6 +17,7 @@
 } */
 .header{
     grid-area: header;
+    border-bottom:solid 1px;   
 }
 .products{
     grid-area: products;
@@ -28,43 +29,61 @@
     "ordering"
     ;
 }
-.products div:nth-child(even){
-    background-color: blue;
-}
 .impactmsg{
     grid-area: impactmsg;
-    background-image: url("/static/images/photo4.jpeg");
+    background-image: url("/static/images/img1.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .promotion{
     grid-area: promotion;
-    background-image: url("/static/images/photo1.jpeg");
+    background-image: url("/static/images/img2.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: block;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 .comment{
     grid-area: comment;
-    background-image: url("/static/images/photo2.jpeg");
+    background-image: url("/static/images/photo4.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+   
 }
 .footer{
     grid-area: footer;
+    border-top: solid 1px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Vollkorn SC', serif
+}
+.footer a{
+    color: red;
 }
 .services{
     grid-area: services;
-    background-image: url("/static/images/drink1.jpg");
+    background-image: url("/static/images/drink1.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .ordering{
     grid-area: ordering;
-    background-image: url("/static/images/photo3.jpeg");
+    background-image: url("/static/images/photo5.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.smoothies{
+    grid-area: smoothies;
+    background-image: url("/static/images/drink1.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +92,7 @@
     .container{
         display: grid;
         grid-template-columns: 15% 1fr 15%;
-        grid-template-rows: 100px 400px 200px 300px 200px 1fr;
+        grid-template-rows: 100px 400px 200px 300px 200px 100px;
         grid-template-areas: 
         ". header ."
         ". impactmsg ."
@@ -82,15 +101,17 @@
         ". comment ."
         ". footer ."
         ;
+        grid-row-gap: 20px;
         color: white;
     }
     .products{
         grid-area: products;
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 40% 40% auto;
         grid-template-rows: 1fr;
+        grid-column-gap: 10px;
         grid-template-areas: 
-        "services ordering";
+        "services smoothies ordering";
     }
 }
 h1{
@@ -103,4 +124,6 @@ h2{
     text-align:left;
     font-size: 3vw;
     font-family: 'Vollkorn SC', serif;
+    width:100%;
+    height:100%;
 }
