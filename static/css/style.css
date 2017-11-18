@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Vollkorn SC', serif
 }
 body{
     /* background-color: #3f1f09; */
@@ -24,5 +25,5 @@ html, body{
     border-top: solid 1px;
     text-align: center;
     padding-top: 10px;
-    font-family: 'Vollkorn SC', serif
+    /* font-family: 'Vollkorn SC', serif */
 }
