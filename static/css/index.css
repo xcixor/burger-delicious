@@ -57,16 +57,13 @@ a{
     background-repeat: no-repeat;
    
 }
-.footer{
+/* .footer{
     grid-area: footer;
     border-top: solid 1px;
     text-align: center;
     padding-top: 10px;
     font-family: 'Vollkorn SC', serif
-}
-.footer a{
-    color: red;
-}
+} */
 .services{
     grid-area: services;
     background-image: url("/static/images/photo6.jpeg");

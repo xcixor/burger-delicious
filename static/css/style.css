@@ -15,3 +15,14 @@ html, body{
     font-family: Vollkorn SC;
     src: url(/static/fonts/volkron-regular.ttf);
 }
+.footer a{
+    color: red;
+    text-decoration: none;
+}
+.footer{
+    grid-area: footer;
+    border-top: solid 1px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Vollkorn SC', serif
+}
