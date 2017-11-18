@@ -69,7 +69,7 @@ a{
 }
 .services{
     grid-area: services;
-    background-image: url("/static/images/drink1.jpeg");
+    background-image: url("/static/images/photo6.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@ a{
 }
 .smoothies{
     grid-area: smoothies;
-    background-image: url("/static/images/drink1.jpeg");
+    background-image: url("/static/images/drink2.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
