@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/products.css">
+    <title>Delicious Burger</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="topnav">
+                <!-- <li><a><img class="logo" src="/static/images/logo.png"></a></li> -->
+                <li><a class="active" href="../index.html">Delicious Burger</a></li>
+                <li><a href="/templates/products.html">Products</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="/templates/branches.html">Branches</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>
+        <div class="foodmenu">
+            <button class="accordion">Breakfast</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
+            </div>
+            <button class="accordion">Salads</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
+            </div>
+            <button class="accordion">Snacks and Dishes</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
+            </div>
+            <button class="accordion">Chicken and Sandwiches</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
+            </div>
+            <button class="accordion">Desserts and Shakes</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
+            </div>
+            <button class="accordion">Drinks</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
+            </div>
+            
+    </div>
+    <div class="footer">
+        <p>Copyright&#169;2017 Delicious Burgers<br>
+            <a href="/templates/contact.html">Contact us</a> for the Best Burgers in the UAE
+        </p>
+    </div>
+    <!-- scripts -->
+    <script>
+        var accordion = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].onclick = function(){
+                this.classList.toggle("active");
+                var area = this.nextElementSibling;
+                if (area.style.display === "block") {
+                    area.style.display = "none";
+                } else {
+                    area.style.display = "block";
+                }
+            }
+        }
+        </script>
+</body>
+</html>

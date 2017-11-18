@@ -1,0 +1,126 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "impactmsg"
+    "products"
+    "promotion"
+    "comment"
+    "footer"
+    ;
+    color: white;
+}
+/* .container div:nth-child(n){
+    background-color: blueviolet;
+} */
+.header{
+    grid-area: header;
+    /* border-bottom:solid 1px;    */
+}
+.products{
+    grid-area: products;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "services"
+    "ordering"
+    ;
+}
+.impactmsg{
+    grid-area: impactmsg;
+    background-image: url("/static/images/img1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.promotion{
+    grid-area: promotion;
+    background-image: url("/static/images/img2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.comment{
+    grid-area: comment;
+    background-image: url("/static/images/photo4.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+/* .footer{
+    grid-area: footer;
+    border-top: solid 1px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Vollkorn SC', serif
+} */
+.services{
+    grid-area: services;
+    background-image: url("/static/images/photo7.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ordering{
+    grid-area: ordering;
+    background-image: url("/static/images/photo5.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.smoothies{
+    grid-area: smoothies;
+    background-image: url("/static/images/drink2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width: 736px){
+    .container{
+        display: grid;
+        grid-template-columns: 15% 1fr 15%;
+        grid-template-rows: 100px 400px 200px 300px 200px 100px;
+        grid-template-areas: 
+        ". header ."
+        ". impactmsg ."
+        ". products ."
+        ". promotion ."
+        ". comment ."
+        ". footer ."
+        ;
+        grid-row-gap: 20px;
+        color: white;
+    }
+    .products{
+        grid-area: products;
+        display: grid;
+        grid-template-columns: 40% 40% auto;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-template-areas: 
+        "services smoothies ordering";
+    }
+}
+h1{
+    text-align:center;
+    margin-top: 100px;
+    font-size: 4vw;
+    /* font-family: 'Vollkorn SC', serif */
+}
+h2{
+    text-align:left;
+    font-size: 2vw;
+    /* font-family: 'Vollkorn SC', serif; */
+    width:100%;
+    height:100%;
+}
