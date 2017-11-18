@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 100px 400px 100px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    ". header ."
+    ". map ."
+    ". footer ."
+    ;
+    color: white;
+}
+.map{
+    grid-area: map;
+    background-image: url("/static/images/photo10.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ul {
+    list-style-type: none;
+    color: red;
+  }

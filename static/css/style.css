@@ -28,5 +28,6 @@ html, body{
     /* font-family: 'Vollkorn SC', serif */
 }
 .header{
+    grid-area: header;
     border-bottom: solid 1px;
 }
