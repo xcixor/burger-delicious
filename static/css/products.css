@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 100px 300px 100px;
+    grid-template-rows: 100px auto 100px;
     grid-row-gap: 20px;
     grid-template-areas: 
     ". header ."
@@ -12,6 +12,7 @@
 }
 .header{
     grid-area: header;
+    border-bottom: solid 1px;
 }
 .foodmenu{
     grid-area: foodmenu;
@@ -20,9 +21,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.footer{
+/* .footer{
+    border-top: solid 1px;
     grid-area: footer;
-}
+} */
 button.accordion {
     background-color: #eee;
     color: #444;
