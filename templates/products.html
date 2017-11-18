@@ -22,35 +22,42 @@
                 <li><a href="/templates/contact.html">Contact Us</a></li>
                 </ul>
         </div>
-        <div class="menu">
-            <button class="accordion">Section 1</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="foodmenu">
+            <button class="accordion">Breakfast</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
             </div>
-            
-            <button class="accordion">Section 2</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="accordion">Salads</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
             </div>
-            
-            <button class="accordion">Section 3</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="accordion">Snacks and Dishes</button>
+            <div class="area">
+              <ol>
+                  <li>Chilli Burgers</li>
+                  <li>Egg Muffin</li>
+              </ol>
             </div>
-        <div class="footer">footer</div>
     </div>
+    <div class="footer">footer</div>
     <!-- scripts -->
     <script>
-        var acc = document.getElementsByClassName("accordion");
+        var accordion = document.getElementsByClassName("accordion");
         var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].onclick = function(){
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].onclick = function(){
                 this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
+                var area = this.nextElementSibling;
+                if (area.style.display === "block") {
+                    area.style.display = "none";
                 } else {
-                    panel.style.display = "block";
+                    area.style.display = "block";
                 }
             }
         }
