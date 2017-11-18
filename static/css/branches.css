@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 100px 400px 100px;
+    grid-template-rows: 100px 750px 100px;
     grid-row-gap: 20px;
     grid-template-areas: 
     ". header ."
@@ -12,12 +12,36 @@
 }
 .map{
     grid-area: map;
-    background-image: url("/static/images/photo10.jpeg");
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "info map-foto"
+    ;
+    /* background-image: url("/static/images/map.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat; */
+}
+.info{
+    grid-area: info;
+}
+.map-foto{
+    grid-area: map-foto;
+    background-image: url("/static/images/map.png");
+    background-size: cover;
+    background-position: left;
     background-repeat: no-repeat;
+    /* height: 100%; */
 }
 ul {
     list-style-type: none;
     color: red;
   }
+  /* iframe{
+      height: 800px;
+      width: 100%;
+  } */
+ p{
+    line-height: 200%;
+}
