@@ -27,3 +27,6 @@ html, body{
     padding-top: 10px;
     /* font-family: 'Vollkorn SC', serif */
 }
+.header{
+    border-bottom: solid 1px;
+}
