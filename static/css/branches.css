@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 100px 750px 100px;
+    grid-template-rows: 100px auto 100px;
     grid-row-gap: 20px;
     grid-template-areas: 
     ". header ."
@@ -13,18 +13,35 @@
 .map{
     grid-area: map;
     display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: auto 600px;
+    grid-template-areas: 
+    ". info ."
+    ". map-foto ."
+    ;
+}
+/* .map{
+    grid-area: map;
+    display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "info map-foto"
     ;
-    /* background-image: url("/static/images/map.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-}
+} */
 .info{
     grid-area: info;
+    /* padding-top: 20%; */
+    /* margin-top: 5px; */
+    /* margin-bottom: 2px; */
+
+}
+.info-text{
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.6;
 }
 .map-foto{
     grid-area: map-foto;
@@ -32,7 +49,6 @@
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
-    /* height: 100%; */
 }
 ul {
     list-style-type: none;
