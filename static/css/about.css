@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 100px 750px 100px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    ". header ."
+    ". history ."
+    ". footer ."
+    ;
+    color: white;
+}
+.history{
+    grid-area: history;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". data .";
+
+    background-image: url("/static/images/photo4.jpeg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+}
+.content{
+    grid-area: data;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 10px;
+}
+p{
+    line-height: 200%;
+}
