@@ -25,6 +25,11 @@
     border-top: solid 1px;
     grid-area: footer;
 } */
+/* ****************************************
+*  Title: W3.CSS accordion
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/w3css/w3css_accordions.asp  */
 button.accordion {
     background-color: #eee;
     color: #444;
@@ -38,7 +43,11 @@ button.accordion {
     transition: 0.4s;
     opacity: 0.6;
 }
-
+/* ****************************************
+*  Title: W3.CSS accordion
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/w3css/w3css_accordions.asp  */
 button.accordion.active, button.accordion:hover {
     background-color: #ccc; 
 }

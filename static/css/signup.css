@@ -11,6 +11,11 @@
     color: white;
     /* background-color: white; */
 }
+/* ****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_signup_form.asp   */
 .signup-form{
     grid-area: signup-form;
     padding: 10%;
@@ -18,6 +23,12 @@
     color: black;
     /* opacity: 0.8; */
 }
+/* ****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_signup_form.asp   */
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -27,6 +38,11 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+/* ****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_signup_form.asp   */
 
 /* Set a style for all buttons */
 button {
@@ -38,12 +54,22 @@ button {
     cursor: pointer;
     width: 100%;
 }
+/* ****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_signup_form.asp   */
 
 /* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
     background-color: red;
 }
+/* ****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_signup_form.asp   */
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,.signupbtn {
@@ -51,6 +77,11 @@ button {
     width: 50%;
 }
 
+/* ****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_signup_form.asp   */
 
 /* Clear floats */
 .clearfix::after {
@@ -58,13 +89,18 @@ button {
     clear: both;
     display: table;
 }
+/* ****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_signup_form.asp   */
 
 /* Change styles for cancel button and signup button on extra small screens */
-/* @media screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
-} */
+}
 .form-holder{
     opacity: 0.8;
     background: whitesmoke;

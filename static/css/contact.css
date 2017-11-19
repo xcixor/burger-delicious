@@ -62,7 +62,11 @@
     /* color: white; */
     padding: 20px;
 }
-
+/* *****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_contact_form.asp   */
 input[type=text], textarea {
     width: 100%;
     padding: 10px;
@@ -72,7 +76,11 @@ input[type=text], textarea {
     margin-bottom: 15px;
     resize: vertical;
 }
-
+/* *****************************************
+*  Title: How To Create a Sign Up Form
+*  Author: W3 Schools
+*  Date: 2017
+*  Availability: http://www.w3schools.com/howto/howto_css_contact_form.asp  */
 input[type=submit] {
     background-color: rgb(22, 113, 233);
     color: white;
