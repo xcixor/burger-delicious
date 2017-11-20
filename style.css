@@ -14,7 +14,7 @@ html, body{
 }
 @font-face {
     font-family: Vollkorn Sc;
-    src: url(/static/fonts/volkron-regular.ttf);
+    src: url(volkron-regular.ttf);
 }
 .footer a{
     color: red;
