@@ -1,9 +1,0 @@
-make use of bootsrap like structure have a div called container
-add padding to it like in bootsrap
-have a common css file for the following classes
-container
-row
-col-third - takes a third of the row
-col-half - takes a half of the row
-
-actuall, css3 is also capable
