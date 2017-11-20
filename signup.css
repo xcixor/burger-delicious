@@ -19,7 +19,7 @@
 .signup-form{
     grid-area: signup-form;
     padding: 10%;
-    background-image: url("/static/images/drink4.jpeg");
+    background-image: url("drink4.jpeg");
     color: black;
     /* opacity: 0.8; */
 }

@@ -31,14 +31,14 @@
 }
 .impactmsg{
     grid-area: impactmsg;
-    background-image: url("/static/images/img1.jpeg");
+    background-image: url("img1.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .promotion{
     grid-area: promotion;
-    background-image: url("/static/images/img2.jpeg");
+    background-image: url("img2.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ a{
 }
 .comment{
     grid-area: comment;
-    background-image: url("/static/images/photo4.jpeg");
+    background-image: url("photo4.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,21 +66,21 @@ a{
 } */
 .services{
     grid-area: services;
-    background-image: url("/static/images/photo7.jpeg");
+    background-image: url("photo7.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .ordering{
     grid-area: ordering;
-    background-image: url("/static/images/photo5.jpeg");
+    background-image: url("photo5.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .smoothies{
     grid-area: smoothies;
-    background-image: url("/static/images/drink2.jpeg");
+    background-image: url("drink2.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

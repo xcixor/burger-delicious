@@ -45,7 +45,7 @@
 }
 .map-foto{
     grid-area: map-foto;
-    background-image: url("/static/images/map.png");
+    background-image: url("map.png");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;

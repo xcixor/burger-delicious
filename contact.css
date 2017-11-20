@@ -32,7 +32,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: 
     ". data .";
-    background-image: url("/static/images/phone.jpeg");
+    background-image: url("phone.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

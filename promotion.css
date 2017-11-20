@@ -23,16 +23,16 @@
     color: red;
 }
 .pic1{
-    background-image: url("/static/images/photo5.jpeg");
+    background-image: url("photo5.jpeg");
 }
 .pic2{
-    background-image: url("/static/images/photo10.jpeg");
+    background-image: url("photo10.jpeg");
 }
 .pic3{
-    background-image: url("/static/images/drink4.jpeg");
+    background-image: url("drink4.jpeg");
     grid-row-end: span 2;
 }
 .pic4{
-    background-image: url("/static/images/drink1.jpeg");
+    background-image: url("drink1.jpeg");
     grid-column: 1 / 3;
 }
