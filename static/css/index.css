@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-row-gap: 10px; */
     grid-template-areas: 
     "header"
     "impactmsg"
@@ -24,11 +25,13 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
     grid-template-areas: 
     "services"
     "smoothies"
     "ordering"
     ;
+    margin-bottom: 10px;
 }
 .impactmsg{
     grid-area: impactmsg;
@@ -36,6 +39,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 10px;
 }
 .promotion{
     grid-area: promotion;
@@ -44,7 +48,7 @@
     background-position: center;
     background-repeat: no-repeat;
     display: block;
-    
+    margin-bottom: 10px;
 }
 a{
     text-decoration: none;
