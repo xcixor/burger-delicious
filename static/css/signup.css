@@ -1,7 +1,7 @@
 .container{
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: auto auto auto;
     grid-row-gap: 20px;
     grid-template-areas: 
     ". header ."
@@ -16,7 +16,6 @@
     padding: 10%;
     background-image: url("/static/images/drink4.jpeg");
     color: black;
-    /* opacity: 0.8; */
 }
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -30,7 +29,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: purple;
+    background-color: green;
     color: white;
     padding: 14px 20px;
     /* margin: 8px 0; */
@@ -60,12 +59,28 @@ button {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
-/* @media screen and (max-width: 300px) {
+@media screen and (max-width: 735px) {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
-} */
+}
 .form-holder{
     opacity: 0.8;
-    background: whitesmoke;
+    background: rebeccapurple;
+    padding: 5px;
+}
+@media screen and (min-width: 736px){
+    .container{
+        display: grid;
+        grid-template-columns: 15% 1fr 15%;
+        grid-template-rows: 100px auto 100px;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        ". header ."
+        ". signup-form ."
+        ". footer ."
+        ;
+        color: white;
+        /* background-color: white; */
+    }
 }
