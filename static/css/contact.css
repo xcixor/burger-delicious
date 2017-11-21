@@ -1,12 +1,12 @@
 .container{
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     grid-row-gap: 20px;
     grid-template-areas: 
-    ". header ."
-    ". contact ."
-    ". footer ."
+    "header"
+    "contact"
+    "footer"
     ;
     color: white;
 }
@@ -14,7 +14,7 @@
 .contact{
     grid-area: contact;
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
+    grid-template-columns: 5% 1fr 5%;
     grid-template-rows: auto auto auto;
     grid-row-gap: 10px;
     grid-template-areas: 
@@ -49,18 +49,20 @@
 .details{
     grid-area: details;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
     grid-template-areas: 
-    "corporate-office direct-contact departments";
+    "corporate-office"
+    "direct-contact"
+    "departments";
 }
 .contact-form{
     grid-area: contact-form;
     /* border-radius: 5px; */
     /* background-color: whitesmoke; */
     /* color: white; */
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 input[type=text], textarea {
@@ -89,4 +91,53 @@ input[type=submit] {
 }
 .departments{
     grid-area: departments;
+}
+@media screen and (min-width: 736px){
+    .container{
+        display: grid;
+        grid-template-columns: 15% 1fr 15%;
+        grid-template-rows: 100px auto 100px;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        ". header ."
+        ". contact ."
+        ". footer ."
+        ;
+        color: white;
+    }
+    .contact{
+        grid-area: contact;
+        display: grid;
+        grid-template-columns: 15% 1fr 15%;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+        ". img ."
+        ". details ."
+        ". contact-form ."
+        ;
+        /* background-color: whitesmoke; */
+    }
+    .img{
+        grid-area: img;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        ". data .";
+        background-image: url("/static/images/phone.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+    }
+    .details{
+        grid-area: details;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-template-areas: 
+        "corporate-office direct-contact departments";
+    }
 }
