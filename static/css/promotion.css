@@ -1,3 +1,53 @@
+@media screen and (max-width: 735px){
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 600px auto;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    ". header ."
+    ". content ."
+    ". mosaic ."
+    ". footer ."
+    ;
+    color: white;
+}
+.content{
+    grid-area: content;
+}
+.mosaic{
+    grid-area: mosaic;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-row-gap: 10px;
+    color: red;
+    grid-template-areas: 
+    "pic1"
+    "pic2"
+    "pic3"
+    "pic4"
+    ;
+}
+.pic1{
+    grid-area: pic1;
+    background-image: url("/static/images/photo5.jpeg");
+}
+.pic2{
+    grid-area: pic2;
+    background-image: url("/static/images/photo10.jpeg");
+}
+.pic3{
+    grid-area: pic3;
+    background-image: url("/static/images/drink4.jpeg");
+}
+.pic4{
+    grid-area: pic4;
+    background-image: url("/static/images/drink1.jpeg");
+    margin-bottom: 10px;
+}
+}
+@media screen and (min-width: 735px){
 .container{
     display: grid;
     grid-template-columns: 15% 1fr 15%;
@@ -35,4 +85,5 @@
 .pic4{
     background-image: url("/static/images/drink1.jpeg");
     grid-column: 1 / 3;
+}
 }
